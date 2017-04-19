@@ -5,9 +5,18 @@ $icon-font-path: '../fonts/';
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 body{
-  max-width: 992px;
+  max-width: 732px;
   margin: 0 auto;
 }
+.container {
+  @media (min-width: 1200px){
+    width: 100%;
+  }
+  @media (min-width: 732px){
+    width: 100%;
+  }
+}
+
 
 @font-face {
   font-family: 'Helvetica';
@@ -43,7 +52,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 568px;
-  width: 992px;
+  width: 732px;
   margin: 0 auto;
   width: 100%;
   position: relative;
