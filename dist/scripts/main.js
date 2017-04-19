@@ -1,0 +1,1 @@
+"use strict";$(".js-navtrigger").click(function(){$(this).toggleClass("-active"),$(".mobile__menu_mnu").toggleClass("_mobile")}),$(".owl-carousel").owlCarousel({items:1,loop:!0,nav:!0,navText:""}),$(".popup-link").magnificPopup({type:"inline",midClick:!0}),$(document).ready(function(){$("#phone").mask("+7 (999) 999-99-99")});
