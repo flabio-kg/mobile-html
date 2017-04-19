@@ -5,8 +5,12 @@ $icon-font-path: '../fonts/';
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 body{
-  max-width: 732px;
-  margin: 0 auto;
+  width: 100%;
+  background-image: url('../images/bg.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  position: relative;
 }
 .container {
   @media (min-width: 1200px){
@@ -47,18 +51,10 @@ body{
 }
 
 .mobile{
-  background-image: url('../images/bg.png');
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 568px;
   width: 732px;
   margin: 0 auto;
+  min-height: 568px;
   width: 100%;
-  position: relative;
-  @media (max-width: $screen-sm-max) {
-    background-position: top center;
-  }
   &:before{
     content: '';
     position: absolute;
@@ -144,7 +140,7 @@ body{
   left: 17px;
   top: 17px;
   cursor: pointer;
-  z-index: 1000000000;
+  z-index: 100;
   i {
     background-color: #FBD425;
     border-radius: 2px;
@@ -367,15 +363,16 @@ body{
 &__check{
   position: relative;
   z-index: 10;
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: center;
-  padding-left: 45px;
-  padding-right: 45px;
   p{
     color: #fff;
     font-size: 11px;
     display: inline-block;
     font-family: 'HelveticaLight';
     padding-bottom: 10px;
+    text-align: left;
   }
   .-btn{
     color: #000;
@@ -398,6 +395,7 @@ body{
       position: relative;
       padding-left: 20px;
       padding-bottom: 7px;
+      display: inline-block;
       cursor: pointer;
     }
     &:not(:checked) + label:before, &:checked + label:before {
