@@ -11,6 +11,32 @@ body{
   background-repeat: no-repeat;
   background-size: cover;  
   position: relative;
+  height: 100%;
+  &:before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/bg_ten.png');
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;      
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: .55;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
 .container {
   @media (min-width: 1200px){
@@ -51,35 +77,11 @@ body{
 }
 
 .mobile{
-  width: 732px;
+  max-width: 768px;
   margin: 0 auto;
   min-height: 568px;
   width: 100%;
-  &:before{
-    content: '';
-    position: absolute;
-    background-image: url('../images/bg_ten.png');
-    background-position: bottom center;
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;      
-  }
-  &:after{
-    content: '';
-    position: absolute;
-    background-color: #000;
-    width: 100%;
-    height: 100%;
-    opacity: .55;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
+  position: relative;  
   &__menu{
     &_mnu{
       position: relative;
@@ -385,6 +387,7 @@ body{
     padding: 10px 45px;
     text-decoration: none;
     outline: none;
+    margin-bottom: 62px;
   }
   [type="checkbox"] {
     &:not(:checked), &:checked {
