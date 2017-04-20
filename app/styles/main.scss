@@ -4,14 +4,15 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
+html{
+  background-color: #000;
+}
 body{
   width: 100%;
   background-image: url('../images/bg.png');
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: cover;  
-  position: relative;
-  height: 100%;
+  background-size: cover;
   &:before{
     content: '';
     position: absolute;
@@ -19,7 +20,6 @@ body{
     background-position: bottom center;
     background-repeat: repeat-x;
     width: 100%;
-    height: 100%;
     bottom: 0;
     top: 0;
     left: 0;
@@ -30,7 +30,6 @@ body{
     position: absolute;
     background-color: #000;
     width: 100%;
-    height: 100%;
     opacity: .55;
     top: 0;
     bottom: 0;
