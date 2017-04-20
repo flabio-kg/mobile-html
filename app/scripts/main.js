@@ -8,7 +8,8 @@ $('.owl-carousel').owlCarousel({
 	loop: true,
 	margin: 10,
 	nav: true,
-	navText: ''
+	navText: '',
+	dots: true
 })
 
 $('.popup-link').magnificPopup({

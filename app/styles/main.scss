@@ -255,6 +255,21 @@ body{
       }
     }
   }
+  .owl-dots{
+    text-align: center;
+    .owl-dot{
+      width: 12px;
+      height: 12px;
+      margin: 10px;
+      display: inline-block;
+      border-radius: 50px;
+      border: 2px solid #FBD425;
+      background: transparent;
+    }
+    .active{
+      background-color: #FBD425;
+    }
+  }
 }
 &__caption{
   margin-top: 260px;
