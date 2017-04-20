@@ -13,6 +13,7 @@ body{
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   &:before{
     content: '';
     position: absolute;
